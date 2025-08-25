@@ -1,5 +1,4 @@
 // components/HeroSection.jsx
-import { Link } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
 
 const HeroSection = () => {
@@ -18,48 +17,49 @@ const HeroSection = () => {
           behavior: 'smooth',
         });
       }
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(slideInterval);
   }, []);
 
   return (
-    <section className="relative w-full bg-white">
+    <section className="relative w-full bg-white overflow-hidden">
       {/* 🧭 Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+        <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold tracking-wide text-gray-900">
+          <a href="/" className="text-2xl font-bold text-gray-900">
             Luxury <span className="text-gray-900">Shopping</span>
-          </Link>
+          </a>
 
           {/* Links */}
           <div className="hidden md:flex space-x-8 text-lg font-medium">
-            <Link to="/" className="hover:text-gray-600 transition">Home</Link>
-            <Link to="/cloth" className="hover:text-gray-600 transition">Clothing</Link>
-            <Link to="/watches" className="hover:text-gray-600 transition">Watches</Link>
+            <a href="/" className="hover:text-gray-600 transition">Home</a>
+            <a href="/cloth" className="hover:text-gray-600 transition">Clothing</a>
+            <a href="/watches" className="hover:text-gray-600 transition">Watches</a>
           </div>
         </div>
       </nav>
 
       {/* 🎞️ Auto Sliding Banner */}
-   <div
-  ref={sliderRef}
-  className="w-[900px] h-[500px] ml-[-80px] flex overflow-x-hidden scroll-smooth mt-10" 
->
-  {bannerImages.map((src, index) => (
-    <div
-      key={index}
-      className="min-w-full flex items-center justify-center"
-    >
-      <img
-        src={`/Cloth/${src}`}
-        alt={`Banner ${index + 1}`}
-        className="w-full h-full object-cover"
-      />
-    </div>
-  ))}
-</div>
+      <div
+        ref={sliderRef}
+        className="w-full max-w-screen-xl mx-auto h-[500px] flex overflow-x-hidden scroll-smooth mt-16 px-4"
+      >
+        {bannerImages.map((src, index) => (
+          <div
+            key={index}
+            className="min-w-full flex items-center justify-center"
+          >
+            <img
+              src={`/Cloth/${src}`}
+              alt={`Banner ${index + 1}`}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
