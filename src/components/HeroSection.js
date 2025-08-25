@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
 
 const HeroSection = () => {
   const sliderRef = useRef(null);
-  const bannerImages = ["newbanner.webp", "watch.webp", "banner12.webp"];
+  const bannerImages = ['newbanner.webp', 'watch.webp', 'banner12.webp'];
 
   useEffect(() => {
     const slider = sliderRef.current;
@@ -18,41 +18,48 @@ const HeroSection = () => {
           behavior: 'smooth',
         });
       }
-    }, 3000); // ⏱ Slide every 3 seconds
+    }, 4000);
 
-    return () => clearInterval(slideInterval); // 🧹 Cleanup on unmount
+    return () => clearInterval(slideInterval);
   }, []);
 
   return (
-    <section className="relative h-[80vh] w-full">
-      {/* Navbar */}
-      <nav className="flex justify-between items-center px-6 py-4 text-black fixed top-0 w-full z-50 bg-white shadow-md">
-        <h1 className="text-xl font-bold">Luxury Shopping</h1>
-        <div className="space-x-6">
-          <Link to="/" className="hover:text-gray-500">Home</Link>
-          <Link to="/cloth" className="hover:text-gray-500">Clothing</Link>
-          <Link to="/watches" className="hover:text-gray-500">Watches</Link>
+    <section className="relative w-full bg-white">
+      {/* 🧭 Navbar */}
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link to="/" className="text-2xl font-bold tracking-wide text-gray-900">
+            Luxury <span className="text-gray-900">Shopping</span>
+          </Link>
+
+          {/* Links */}
+          <div className="hidden md:flex space-x-8 text-lg font-medium">
+            <Link to="/" className="hover:text-gray-600 transition">Home</Link>
+            <Link to="/cloth" className="hover:text-gray-600 transition">Clothing</Link>
+            <Link to="/watches" className="hover:text-gray-600 transition">Watches</Link>
+          </div>
         </div>
       </nav>
 
-      {/* 👇 Auto Sliding Banner */}
-      <div
-        ref={sliderRef}
-        className="w-full h-[600px] flex overflow-x-hidden scroll-smooth pt-20"
-      >
-        {bannerImages.map((src, index) => (
-          <div
-            key={index}
-            className="min-w-full flex items-center justify-center"
-          >
-            <img
-              src={`/Cloth/${src}`}
-              alt={`Banner ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
+      {/* 🎞️ Auto Sliding Banner */}
+   <div
+  ref={sliderRef}
+  className="w-[900px] h-[500px] ml-[-80px] flex overflow-x-hidden scroll-smooth "
+>
+  {bannerImages.map((src, index) => (
+    <div
+      key={index}
+      className="min-w-full flex items-center justify-center"
+    >
+      <img
+        src={`/Cloth/${src}`}
+        alt={`Banner ${index + 1}`}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  ))}
+</div>
     </section>
   );
 };

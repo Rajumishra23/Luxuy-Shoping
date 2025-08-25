@@ -2,19 +2,17 @@ import React from "react";
 
 export default function MostWantedCategories() {
   const categories = [
-  { image: "/Cloth/shirt1.webp" },
-  { image: "/Cloth/shirt2.webp" },
-  { image: "/Cloth/shirt3.webp" },
-  { image: "/Cloth/shirt4.webp" },
-  { image: "/Cloth/shirt5.webp" },
-  { image: "/Cloth/shirt6.webp" },
-  { image: "/Cloth/shirt7.webp" },
-  { image: "/Cloth/shirt8.webp" },
-  { image: "/Cloth/shirt9.webp" },
-  { image: "/Cloth/shirt10.webp" },
-];
-
-  
+    {  image: "/Cloth/shirt1.webp" },
+    {  image: "/Cloth/shirt2.webp" },
+    {  image: "/Cloth/shirt3.webp" },
+    {  image: "/Cloth/shirt4.webp" },
+    {  image: "/Cloth/shirt5.webp" },
+    { image: "/Cloth/shirt6.webp" },
+    {  image: "/Cloth/shirt7.webp" },
+    { image: "/Cloth/shirt8.webp" },
+    {  image: "/Cloth/shirt9.webp" },
+    { image: "/Cloth/shirt10.webp" },
+  ];
 
   return (
     <section className="bg-white py-12 px-6">

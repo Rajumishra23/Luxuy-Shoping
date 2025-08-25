@@ -4,21 +4,20 @@ import { FaHeart } from "react-icons/fa";
 export default function NewArrival() {
   const categories = ["View All", "Shirts", "T-shirts", "Polo T-shirts", "Jeans", "Cargo Trousers"];
 
-const products = [
-  { title: "White Artbox Textured Shirt", price: 799, discount: 10, category: "Shirts", image: "/Cloth/A1.webp" },
-  { title: "Black Fit Artbox Textured Shirt", price: 849, discount: 5, category: "Shirts", image: "/Cloth/A2.webp" },
-  { title: "Grey Crew – Plain Cotton Shirt", price: 899, discount: 15, category: "Shirts", image: "/Cloth/A3.webp" },
-  { title: "Olive Solid Pocket Shirt", price: 749, discount: 8, category: "Shirts", image: "/Cloth/A4.webp" },
-  { title: "Blue Checkered Shirt", price: 799, discount: 12, category: "Shirts", image: "/Cloth/A5.webp" },
-  { title: "Red Slim Fit Shirt", price: 849, discount: 10, category: "Shirts", image: "/Cloth/A6.webp" },
-  { title: "Black Casual Shirt", price: 899, discount: 7, category: "Shirts", image: "/Cloth/A7.webp" },
-  { title: "White Formal Shirt", price: 799, discount: 5, category: "Shirts", image: "/Cloth/A8.webp" },
-  { title: "Green Polo Shirt", price: 749, discount: 10, category: "Polo T-shirts", image: "/Cloth/A9.webp" },
-  { title: "Navy Blue Polo Shirt", price: 849, discount: 15, category: "Polo T-shirts", image: "/Cloth/A10.webp" },
-  { title: "Beige Cargo Trousers", price: 999, discount: 20, category: "Cargo Trousers", image: "/Cloth/A11.webp" },
-  { title: "Denim Jeans", price: 1099, discount: 10, category: "Jeans", image: "/Cloth/A12.webp" },
-];
-
+  const products = [
+    { title: "White Artbox Textured Shirt", price: 799, discount: 10, category: "Shirts", image: "/Cloth/A1.webp" },
+    { title: "Black Fit Artbox Textured Shirt", price: 849, discount: 5, category: "Shirts", image: "/Cloth/A2.webp" },
+    { title: "Grey Crew – Plain Cotton Shirt", price: 899, discount: 15, category: "Shirts", image: "/Cloth/A3.webp" },
+    { title: "Olive Solid Pocket Shirt", price: 749, discount: 8, category: "Shirts", image: "/Cloth/A4.webp" },
+    { title: "Blue Checkered Shirt", price: 799, discount: 12, category: "Shirts", image: "/Cloth/A5.webp" },
+    { title: "Red Slim Fit Shirt", price: 849, discount: 10, category: "Shirts", image: "/Cloth/A6.webp" },
+    { title: "Black Casual Shirt", price: 899, discount: 7, category: "Shirts", image: "/Cloth/A7.webp" },
+    { title: "White Formal Shirt", price: 799, discount: 5, category: "Shirts", image: "/Cloth/A8.webp" },
+    { title: "Green Polo Shirt", price: 749, discount: 10, category: "Polo T-shirts", image: "/Cloth/A9.webp" },
+    { title: "Navy Blue Polo Shirt", price: 849, discount: 15, category: "Polo T-shirts", image: "/Cloth/A10.webp" },
+    { title: "Beige Cargo Trousers", price: 999, discount: 20, category: "Cargo Trousers", image: "/Cloth/A11.webp" },
+    { title: "Denim Jeans", price: 1099, discount: 10, category: "Jeans", image: "/Cloth/A12.webp" },
+  ];
 
   const [selectedCategory, setSelectedCategory] = useState("View All");
 

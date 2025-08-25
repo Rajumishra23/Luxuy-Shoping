@@ -11,7 +11,7 @@ const testimonials = [
   {
     name: "Sneha Verma",
     role: "Creative Lead, Luxe Spaces",
-    image: "/watches/girl.png",
+    image: "/Watches/girl.png",
     quote:
       "The attention to detail and responsiveness helped us attract premium clients seamlessly.",
   },

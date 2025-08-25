@@ -12,19 +12,19 @@ export default function ComboSection() {
       });
     }
   };
-const combos = [
-  { image: "/Cloth/combo1.webp" },
-  { image: "/Cloth/combo2.webp" },
-  { image: "/Cloth/combo3.webp" },
-  { image: "/Cloth/combo4.webp" },
-  { image: "/Cloth/combo5.webp" },
-  { image: "/Cloth/combo6.webp" },
-  { image: "/Cloth/combo7.webp" },
-  { image: "/Cloth/combo8.webp" },
-  { image: "/Cloth/combo9.webp" },
-  { image: "/Cloth/combo10.webp" },
-];
 
+  const combos = [
+    { image: "/Cloth/combo1.webp" },
+    { image: "/Cloth/combo2.webp" },
+    { image: "/Cloth/combo3.webp" },
+    { image: "/Cloth/combo4.webp" },
+    { image: "/Cloth/combo5.webp" },
+    { image: "/Cloth/combo6.webp" },
+    { image: "/Cloth/combo7.webp" },
+    { image: "/Cloth/combo8.webp" },
+    { image: "/Cloth/combo9.webp" },
+    { image: "/Cloth/combo10.webp" },
+  ];
 
   return (
     <section className="bg-white py-12 px-6">

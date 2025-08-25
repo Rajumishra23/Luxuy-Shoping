@@ -3,26 +3,27 @@ import React from "react";
 export default function BackToCollege() {
   const collegeStyles = [
     {
-     title: "COLLEGE CORE",
-    image: "/Cloth/c1.webp",
-    tag: "FITS FOR YOUR VIBE",
-  },
-  {
-    title: "GHAR KE DOOR",
-    image: "/Cloth/c2.webp",
-    tag: "FITS FOR YOUR VIBE",
-  },
-  {
-    title: "I’M DGAF",
-    image: "/Cloth/c3.webp",
-    tag: "FITS FOR YOUR VIBE",
-  },
-  {
-    title: "INTROVERT",
-    image: "/Cloth/c4.webp",
-    tag: "FITS FOR YOUR VIBE",
-  },
-];
+      title: "COLLEGE CORE",
+      image: "/Cloth/c1.webp",
+      tag: "FITS FOR YOUR VIBE",
+    },
+    {
+      title: "GHAR KE DOOR",
+      image: "/Cloth/c2.webp",
+      tag: "FITS FOR YOUR VIBE",
+    },
+    {
+      title: "I’M DGAF",
+      image: "/Cloth/c3.webp",
+      tag: "FITS FOR YOUR VIBE",
+    },
+    {
+      title: "INTROVERT",
+      image: "/Cloth/c4.webp",
+      tag: "FITS FOR YOUR VIBE",
+    },
+  ];
+
   return (
     <section className="bg-white py-12 px-4 sm:px-6">
       <h2 className="text-center text-2xl font-bold mb-2">BACK TO COLLEGE</h2>

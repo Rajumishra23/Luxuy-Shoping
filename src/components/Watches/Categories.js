@@ -2,7 +2,7 @@ import React from "react";
 
 const categories = [
   {
-  title: "Men's Watches",
+    title: "Men's Watches",
     image: "/Watches/c1.png",
   },
   {
@@ -28,15 +28,19 @@ const categories = [
   {
     title: "Smart Watches",
     image: "/Watches/c6.png", // ✅ New category image
+   
   },
+  
   {
     title: "Vintage Watches",
     image: "/Watches/c7.png",
+
   },
-  {
+   {
     title: "Minimalist Watches",
     image: "/Watches/c8.png",
   },
+
 ];
 
 const Collections = () => {

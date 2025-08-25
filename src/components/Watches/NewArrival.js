@@ -1,38 +1,39 @@
 import React from "react";
 
 const products = [
-  { title: "Vintage Gold Wristwatch",
-      brand: "Rolex",
-      image: "/Watches/new1.png",
-      price: "₹16,445.00",
-      oldPrice: "₹18,272.00",
-      discount: "-10%",
-    },
-    {
-      title: "Heritage Automatic Watch",
-      brand: "Omega",
-      image: "/Watches/New2.png",
-      price: "₹7,482.00",
-      oldPrice: null,
-      discount: null,
-    },
-    {
-      title: "Patek Philippe Nautilus",
-      brand: "Patek Philippe",
-      image: "/Watches/New3.png",
-      price: "₹6,787.00",
-      oldPrice: null,
-      discount: null,
-    },
-    {
-      title: "Audemars Piguet Royal",
-      brand: "Audemars Piguet",
-      image: "/Watches/New5.png",
-      price: "₹11,224.00",
-      oldPrice: "₹12,999.00",
-      discount: "-14%",
-    },
-  ];
+  {
+    title: "Vintage Gold Wristwatch",
+    brand: "",
+    image: "/Watches/new1.png",
+    price: "₹16,445.00",
+    oldPrice: "₹18,272.00",
+    discount: "-10%",
+  },
+  {
+    title: "Heritage Automatic Watch",
+    brand: "",
+    image: "/Watches/New2.png",
+    price: "₹7,482.00",
+    oldPrice: null,
+    discount: null,
+  },
+  {
+    title: "Patek Philippe Nautilus",
+    brand: "",
+    image: "/Watches/New3.png",
+    price: "₹6,787.00",
+    oldPrice: null,
+    discount: null,
+  },
+  {
+    title: "Audemars Piguet Royal",
+    brand: "",
+    image: "/Watches/New5.png",
+    price: "₹11,224.00",
+    oldPrice: null,
+    discount: null,
+  },
+];
 
 const NewArrival = () => {
   return (
