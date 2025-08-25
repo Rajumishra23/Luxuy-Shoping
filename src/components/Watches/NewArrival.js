@@ -3,7 +3,7 @@ import React from "react";
 const products = [
   { title: "Vintage Gold Wristwatch",
       brand: "Rolex",
-      image: "/watches/new1.png",
+      image: "/Watches/new1.png",
       price: "₹16,445.00",
       oldPrice: "₹18,272.00",
       discount: "-10%",
@@ -11,7 +11,7 @@ const products = [
     {
       title: "Heritage Automatic Watch",
       brand: "Omega",
-      image: "/watches/new2.png",
+      image: "/Watches/new2.png",
       price: "₹7,482.00",
       oldPrice: null,
       discount: null,
@@ -19,7 +19,7 @@ const products = [
     {
       title: "Patek Philippe Nautilus",
       brand: "Patek Philippe",
-      image: "/watches/new3.png",
+      image: "/Watches/new3.png",
       price: "₹6,787.00",
       oldPrice: null,
       discount: null,
@@ -27,7 +27,7 @@ const products = [
     {
       title: "Audemars Piguet Royal",
       brand: "Audemars Piguet",
-      image: "/watches/new5.png",
+      image: "/Watches/new5.png",
       price: "₹11,224.00",
       oldPrice: "₹12,999.00",
       discount: "-14%",

@@ -3,39 +3,39 @@ import React from "react";
 const categories = [
   {
   title: "Men's Watches",
-    image: "/watches/c1.png",
+    image: "/Watches/c1.png",
   },
   {
     title: "Women's Watches",
-    image: "/watches/w.png",
+    image: "/Watches/w.png",
   },
   {
     title: "Pre-Owned Watches",
-    image: "/watches/c2.png",
+    image: "/Watches/c2.png",
   },
   {
     title: "Pocket Watches",
-    image: "/watches/c3.png",
+    image: "/Watches/c3.png",
   },
   {
     title: "Luxury Watches",
-    image: "/watches/c4.png",
+    image: "/Watches/c4.png",
   },
   {
     title: "Diver Watches",
-    image: "/watches/c5.png",
+    image: "/Watches/c5.png",
   },
   {
     title: "Smart Watches",
-    image: "/watches/c6.png", // ✅ New category image
+    image: "/Watches/c6.png", // ✅ New category image
   },
   {
     title: "Vintage Watches",
-    image: "/watches/c7.png",
+    image: "/Watches/c7.png",
   },
   {
     title: "Minimalist Watches",
-    image: "/watches/c8.png",
+    image: "/Watches/c8.png",
   },
 ];
 
