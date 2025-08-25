@@ -1,22 +1,29 @@
-// pages/Home.jsx
-
-import HeroSection from '../components/HeroSection'; // Global header
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Cloth from '../components/Cloth';
+import Watches from '../components/Watches';
+import HeroSection from '../components/HeroSection';
 
 const Home = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const handleClick = (section) => {
+    setActiveSection(prev => prev === section ? null : section);
+  };
+
   return (
-    <>
-      
-      <HeroSection />
-      <section className="flex justify-center gap-10 mt-20">
-        <Link to="/cloth" className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
-          Explore Clothing
-        </Link>
-        <Link to="/watches" className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
-          Explore Watches
-        </Link>
-      </section>
-    </>
+    <div className="w-full">
+      {/* Global Navbar + Header Image + Buttons */}
+      <HeroSection
+        onClothingClick={() => handleClick('clothing')}
+        onWatchesClick={() => handleClick('watches')}
+      />
+
+      {/* 👇 Conditional Section Rendering */}
+      <div className="px-6 py-10">
+        {activeSection === 'clothing' && <Cloth />}
+        {activeSection === 'watches' && <Watches />}
+      </div>
+    </div>
   );
 };
 
