@@ -45,7 +45,7 @@ const HeroSection = () => {
       {/* 🎞️ Auto Sliding Banner */}
    <div
   ref={sliderRef}
-  className="w-[900px] h-[500px] ml-[-80px] flex overflow-x-hidden scroll-smooth "
+  className="w-[900px] h-[500px] ml-[-80px] flex overflow-x-hidden scroll-smooth mt-10" 
 >
   {bannerImages.map((src, index) => (
     <div
