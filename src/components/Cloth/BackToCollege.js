@@ -4,22 +4,22 @@ export default function BackToCollege() {
   const collegeStyles = [
     {
       title: "COLLEGE CORE",
-      image: "c1.webp",
+      image: "/Cloth/c1.webp",
       tag: "FITS FOR YOUR VIBE",
     },
     {
       title: "GHAR KE DOOR",
-      image: "c2.webp",
+      image: "/Cloth/c2.webp",
       tag: "FITS FOR YOUR VIBE",
     },
     {
       title: "I’M DGAF",
-      image: "c3.webp",
+      image: "/Cloth/c3.webp",
       tag: "FITS FOR YOUR VIBE",
     },
     {
       title: "INTROVERT",
-      image: "c4.webp",
+      image: "/Cloth/c4.webp",
       tag: "FITS FOR YOUR VIBE",
     },
   ];
