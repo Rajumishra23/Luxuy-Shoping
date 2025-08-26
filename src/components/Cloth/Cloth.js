@@ -8,10 +8,12 @@ import Coupon from './Coupon';
 import Testimonials from './Testimonials';
 import MostWanted from './MostWanted';
 import Footer from './Footer';
+import Header from './Header';
 
 const Cloth = () => {
   return (
     <div className="flex flex-col gap-10">
+      <Header />      
       <NewArrival />
       <Combo />
       <MostWanted />

@@ -179,7 +179,7 @@ export default function Header() {
 
       {/* 👇 Auto Sliding Banner */}
       <div ref={sliderRef} className="w-full h-[600px] flex overflow-x-hidden scroll-smooth">
-        {["newbanner.webp", "banner2.webp", "banner12.webp"].map((src, index) => (
+        {["/Cloth/newbanner.webp", "/Cloth/banner2.webp", "/Cloth/banner12.webp"].map((src, index) => (
           <div key={index} className="min-w-full flex items-center justify-center">
             <img src={src} alt={`Banner ${index + 1}`} className="w-full h-full object-cover" />
           </div>

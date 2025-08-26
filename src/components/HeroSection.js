@@ -1,26 +1,7 @@
-// components/HeroSection.jsx
-import { useRef, useEffect } from 'react';
+import { NavLink, useLocation } from "react-router-dom";
 
 const HeroSection = () => {
-  const sliderRef = useRef(null);
-  const bannerImages = ['newbanner.webp', 'watch.webp', 'banner12.webp'];
-
-  useEffect(() => {
-    const slider = sliderRef.current;
-    let index = 0;
-
-    const slideInterval = setInterval(() => {
-      if (slider) {
-        index = (index + 1) % bannerImages.length;
-        slider.scrollTo({
-          left: index * slider.offsetWidth,
-          behavior: 'smooth',
-        });
-      }
-    }, 3000);
-
-    return () => clearInterval(slideInterval);
-  }, []);
+  const location = useLocation(); // current route ka path milega
 
   return (
     <section className="relative w-full bg-white overflow-hidden">
@@ -32,34 +13,47 @@ const HeroSection = () => {
             Luxury <span className="text-gray-900">Shopping</span>
           </a>
 
-          {/* Links */}
-          <div className="hidden md:flex space-x-8 text-lg font-medium">
-            <a href="/" className="hover:text-gray-600 transition">Home</a>
-            <a href="/cloth" className="hover:text-gray-600 transition">Clothing</a>
-            <a href="/watches" className="hover:text-gray-600 transition">Watches</a>
+          {/* Links as Buttons */}
+          <div className="hidden md:flex space-x-3 text-base font-medium">
+            <NavLink
+              to="/cloth"
+              className={({ isActive }) =>
+                `px-3 py-1.5 rounded-lg transition ${
+                  isActive
+                    ? "bg-black text-white"
+                    : "bg-[#B58B58] text-black hover:bg-yellow-500"
+                }`
+              }
+            >
+              Cloth
+            </NavLink>
+
+            <NavLink
+              to="/watches"
+              className={({ isActive }) =>
+                `px-3 py-1.5 rounded-lg transition ${
+                  isActive
+                    ? "bg-gray-800 text-white"
+                    : "bg-[#B58B58] text-black hover:bg-yellow-500"
+                }`
+              }
+            >
+              Watches
+            </NavLink>
           </div>
         </div>
       </nav>
 
-      {/* 🎞️ Auto Sliding Banner */}
-      <div
-        ref={sliderRef}
-        className="w-full max-w-screen-xl mx-auto h-[500px] flex overflow-x-hidden scroll-smooth mt-16 px-4"
-      >
-        {bannerImages.map((src, index) => (
-          <div
-            key={index}
-            className="min-w-full flex items-center justify-center"
-          >
-            <img
-              src={`/Cloth/${src}`}
-              alt={`Banner ${index + 1}`}
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
+      {/* ✅ Static Image sirf home route par */}
+      {location.pathname === "/" && (
+        <div className="mt-16 w-full h-[500px] relative overflow-hidden">
+          <img
+            src="Header2.webp"
+            alt="Hero Banner"
+            className="w-full h-[500px] object-cover"
+          />
+        </div>
+      )}
     </section>
   );
 };

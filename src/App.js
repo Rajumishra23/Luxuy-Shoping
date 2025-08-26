@@ -1,12 +1,16 @@
-// src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+// App.js
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HeroSection from "./components/HeroSection";
+import Cloth from "./components/Cloth/Cloth";
+import Watches from "./components/Watches/Watches";
 
 function App() {
   return (
     <Router>
+      <HeroSection />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/cloth" element={<Cloth />} />
+        <Route path="/watches" element={<Watches />} />
       </Routes>
     </Router>
   );

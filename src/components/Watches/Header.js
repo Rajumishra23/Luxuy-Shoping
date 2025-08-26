@@ -2,25 +2,25 @@ import React, { useState, useEffect } from "react";
 
 const banners = [
   {
-    image: "watch.png",
+    image: "/Watches/watch.png",
     title: "Audemars Piguet Royal Oak Collection",
     desc: "Finely finished mechanical movements with avant-garde style.",
     navColor: "#1a1a1a",
   },
   {
-    image: "watch1.png",
+    image: "/Watches/watch1.png",
     title: "Rolex Submariner Series",
     desc: "Dive into precision with timeless craftsmanship.",
     navColor: "#0f172a",
   },
   {
-    image: "watch2.png",
+    image: "/Watches/watch2.png",
     title: "Omega Speedmaster",
     desc: "The watch that went to the moon — now on your wrist.",
     navColor: "#2c2c2c",
   },
   {
-    image: "header3.png",
+    image: "/Watches/header3.png",
     title: "Tag Heuer Carrera",
     desc: "Racing-inspired design meets Swiss engineering.",
     navColor: "#3b3b3b",
@@ -38,7 +38,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="relative h-[100vh] w-full overflow-hidden text-white">
+    <section className="relative h-[100vh] w-full overflow-hidden text-white pt-16">
       {/* Background Images */}
       {banners.map((banner, index) => (
         <img

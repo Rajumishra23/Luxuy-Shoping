@@ -7,23 +7,22 @@ import {
 
 const Navbar = () => {
   return (
-   <header className="bg-black text-white text-sm">
-  {/* Main Navbar */}
-  <div className="flex justify-between items-center px-8 py-5">
-    {/* Logo */}
-    <div className="text-2xl font-bold tracking-wide">ZENNY</div>
+    <header className="bg-black text-white text-sm fixed top-0 left-0 w-full z-50 shadow-md">
+      {/* Main Navbar */}
+      <div className="flex justify-between items-center px-8 py-5">
+        {/* Logo */}
+        <div className="text-2xl font-bold tracking-wide">ZENNY</div>
 
-    {/* Nav Links */}
-    <nav className="hidden md:flex space-x-8 text-sm font-medium">
-      <a href="#" className="hover:text-primary transition duration-200">HOME</a>
-      <a href="#" className="hover:text-primary transition duration-200">SHOP</a>
-      <a href="#" className="hover:text-primary transition duration-200">COLLECTION</a>
-      <a href="#" className="hover:text-primary transition duration-200">BLOG</a>
-      <a href="#" className="hover:text-primary transition duration-200">PAGES</a>
-      <a href="#" className="hover:text-primary transition duration-200">ELEMENTORS</a>
-      <a href="#" className="hover:text-primary transition duration-200">SALE</a>
-    </nav>
-
+        {/* Nav Links */}
+        <nav className="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#" className="hover:text-primary transition duration-200">HOME</a>
+          <a href="#" className="hover:text-primary transition duration-200">SHOP</a>
+          <a href="#" className="hover:text-primary transition duration-200">COLLECTION</a>
+          <a href="#" className="hover:text-primary transition duration-200">BLOG</a>
+          <a href="#" className="hover:text-primary transition duration-200">PAGES</a>
+          <a href="#" className="hover:text-primary transition duration-200">ELEMENTORS</a>
+          <a href="#" className="hover:text-primary transition duration-200">SALE</a>
+        </nav>
 
         {/* Icons */}
         <div className="flex items-center gap-6">
@@ -32,7 +31,7 @@ const Navbar = () => {
 
           {/* Cart Icon with Badge */}
           <div className="relative group">
-            <ShoppingBagIcon className="h-5 w-5  drop-shadow-md cursor-pointer transition-transform duration-300 group-hover:scale-110" />
+            <ShoppingBagIcon className="h-5 w-5 drop-shadow-md cursor-pointer transition-transform duration-300 group-hover:scale-110" />
             <span className="absolute -top-2 -right-2 bg-yellow-600 text-white text-[10px] font-semibold px-1.5 py-0.5 rounded-full animate-pulse">
               0
             </span>
